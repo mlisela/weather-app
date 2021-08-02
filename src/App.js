@@ -2,13 +2,16 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import Weather from './components/weather';
 import Loader from './components/loader';
+import useWindowSize from "./utils/useWindowSize";
 
 function App() {
 
 	const [lat, setLat] = useState([]);
 	const [long, setLong] = useState([]);
 	const [forecastData, setForecastData] = useState([]);
+	const { width } = useWindowSize();
 
+	console.log('width', width);
 	// used to load the function when app loads | reloads
 	useEffect(() => {
 		const fetchData = async () => {
@@ -30,7 +33,7 @@ function App() {
 	return (
 		<div className="App">
 			{(typeof forecastData.main !== 'undefined') ? (
-				<Weather weatherData={forecastData} />
+				width > 500 && (<Weather weatherData={forecastData} />)
 			) : (
 				<Loader />
 			)}
