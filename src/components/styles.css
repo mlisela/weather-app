@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 .main{
-    width: 50%;
+    width: 77%;
     border-radius: 15px;
     background-color: #9ed0dd;
     margin: auto;
@@ -21,7 +21,7 @@
     /* background-color: #9ed0dd; */
     color: whitesmoke;
     padding: 1px;
-    font-size: 28px;
+    font-size: 22px;
     border-radius: 15px;
     font-family: 'Recursive', sans-serif;
 }
@@ -30,7 +30,7 @@
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -38,7 +38,7 @@
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .flex{
@@ -46,21 +46,86 @@
     justify-content: space-between;
 }
 .button{
-    width: 85px;
-    height: 35px;
+    width: 63px;
+    height: 29px;
 }
 .sunrise-sunset{
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .description{
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 600;
 }
 
+@media (min-width: 481px) {
+    .main{
+        width: 78%;
+        border-radius: 15px;
+        background-color: #9ed0dd;
+        margin: auto;
+    }
+    
+    .top{
+        height: 60px;
+        background-color: #424242;
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: 20px 20px 0 0;
+        font-family: 'Recursive', sans-serif;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header{
+        /* background-color: #9ed0dd; */
+        color: whitesmoke;
+        padding: 1px;
+        font-size: 28px;
+        border-radius: 15px;
+        font-family: 'Recursive', sans-serif;
+    }
+    
+    .day{
+        padding: 15px;
+        color: whitesmoke;
+        font-family: 'Recursive', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .temp{
+        padding: 15px;
+        color: whitesmoke;
+        font-family: 'Recursive', sans-serif;
+        font-size: 18px;
+    }
+    
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .button{
+        width: 85px;
+        height: 35px;
+    }
+    .sunrise-sunset{
+        padding: 15px;
+        color: whitesmoke;
+        font-family: 'Recursive', sans-serif;
+        font-size: 16px;
+    }
+    
+    .description{
+        padding: 15px;
+        color: whitesmoke;
+        font-family: 'Recursive', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}

@@ -11,7 +11,6 @@ function App() {
 	const [forecastData, setForecastData] = useState([]);
 	const { width } = useWindowSize();
 
-	console.log('width', width);
 	// used to load the function when app loads | reloads
 	useEffect(() => {
 		const fetchData = async () => {
@@ -33,7 +32,7 @@ function App() {
 	return (
 		<div className="App">
 			{(typeof forecastData.main !== 'undefined') ? (
-				width > 500 && (<Weather weatherData={forecastData} />)
+				width > 319 &&(<Weather weatherData={forecastData} />)
 			) : (
 				<Loader />
 			)}
